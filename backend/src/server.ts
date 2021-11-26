@@ -1,0 +1,26 @@
+import express from 'express';
+
+import { createConnection } from 'typeorm';
+import "express-async-errors";
+import { pagination } from "typeorm-pagination";
+import { resolve } from 'path';
+import 'dotenv/config';
+import router from './config/router';
+
+
+const port = process.env.API_PORT || 4001;
+const app = express();
+
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+
+
+app.use('/static/filme', 
+    express.static(resolve(__dirname, '..', 'public', 'static', 'uploads'))
+);
+createConnection().then(()=> "DataBase was connected sucessful!")
+
+
+app.use(router);
+
+app.listen(port);
