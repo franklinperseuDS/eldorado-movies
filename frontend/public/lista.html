@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\assets\css\style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src='..\assets\scripts\menu.js'></script>
+    <title>Lista de Filmes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="menu"></div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="area-lista">
+                    <div class="lista">
+                        <h5 class="card-title">Lista de Filmes</h5>
+                        <p class="card-text">
+                            Aqui está a lista de <code>Filmes</code> cadastrados.
+                        </p>
+                        <table class="table table-sm">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nome Filme</th>
+                                    <th scope="col">Sinopse</th>
+                                    <th scope="col">Faturamento</th>
+                                    <th scope="col">Poster</th>
+                                    <th scope="col">Genero</th>
+                                    <th scope="col">Data de Criação</th>
+                                    <th scope="col">Data de Update</th>
+                                </tr>
+                            </thead>
+                            <tbody class="card-header">
+                                <tr>
+                                    <td scope="row">001</td>
+                                    <td scope="row">Rambo 3</td>
+                                    <td scope="row">O cara e uma maquina de guerra</td>
+                                    <td scope="row">$ 1000.00</td>
+                                    <td scope="row">url://xpto</td>
+                                    <td scope="row">Ação</td>
+                                    <th scope="row">01-01-1900</th>
+                                    <th scope="row">01-01-1901</th>
+
+                                    <td>
+                                        <a href="" class="btn btn-info">
+                                            Editar
+                                        </a>
+                                        <a href="" class="btn btn-danger">
+                                            Excluir
+                                        </a>
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <hr />
+                        <div class="text-right">
+                            <a class="btn btn-primary" href="">
+                                Cadastrar Filme
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    montarMenu()
+</script>
+
+</html>

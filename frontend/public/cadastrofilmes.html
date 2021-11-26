@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\assets\css\style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src='..\assets\scripts\menu.js'></script>
+    <title>tela de formulario</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="section_menu">
+            <div id='menu'></div>
+
+        </section>
+        <section>
+            <div class="form-group"> </div>
+            <form action="" class="filmes">
+                <h1> Cadastro de Filmes </h1>
+
+                <!-- <table class="tabelaformulariofilmes">
+
+                    <tr>
+                        <td colspan=2 style="text-align: center;">
+                            <h1> Cadastro de Filmes </h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Nome do Filme</label></td>
+
+                        <td> <input type="text" class="form-control" name="nome_filme" id="nome_filme"></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Ano de Lançamento</label> </td>
+                        <td> <input type="number" class="form-control" max-size="4" name="lancamento_filme" id="lancamento_filme"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label>Faturamento em Dólar ($):</label> </td>
+                        <td> <input type="number" class="form-control" name="faturamento_filme" id="faturamento_filme"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Poster do Filme:</label> </td>
+                        <td> <input type="text" class="form-control" name="poster_filme" id="poster_filme"> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Gênero:</label> </td>
+                        <td><select name="genero_filme" id="genero_filme" class="form-control">
+                                    <option value="">Escolha...</option>
+                                    <option value="1">Ação</option>
+                                    <option value="2">Animação</option>
+                                    <option value="3">Aventura</option>
+                                    <option value="4">Comédia</option>
+                                    <option value="5">Drama</option>
+                                    <option value="6">Guerra</option>
+                                 </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" class="btn btn-primary" value="Salvar">
+
+                        </td>
+                    </tr>
+                </table> -->
+
+
+
+                <div class="form-group">
+                    <label>Nome do Filme :</label>
+                    <input type="text" class="form-control" name="nome_filme" id="nome_filme">
+                </div>
+                <div class=row>
+                    <div class="col-md-4">
+                        <label>Ano de Lançamento</label>
+                        <input type="number" class="form-control" max-size="4" name="lancamento_filme" id="lancamento_filme">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Faturamento em Dólar ($):</label>
+                        <input type="number" class="form-control" name="faturamento_filme" id="faturamento_filme">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Gênero:</label> </td>
+                        <select name="genero_filme" id="genero_filme" class="form-control">
+                                    <option value="">Escolha...</option>
+                                    <option value="1">Ação</option>
+                                    <option value="2">Animação</option>
+                                    <option value="3">Aventura</option>
+                                    <option value="4">Comédia</option>
+                                    <option value="5">Drama</option>
+                                    <option value="6">Guerra</option>
+                                 </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Poster do Filme:</label> </td>
+                        <input type="file" class="" name="poster_filme" id="poster_filme">
+                    </div>
+
+                </div>
+                <div class="row">&nbsp;</div>
+                <div class="text-right">
+                    <input type="submit" class="btn btn-primary" value="Cadastrar Filme">
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+<script>
+    montarMenu()
+</script>
+
+</html>

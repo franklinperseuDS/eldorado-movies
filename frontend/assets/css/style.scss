@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    background-color: #0f171e;
+    color: #d8dbde;
+}
+
+.container {
+    width: 100%;
+}
+
+.menu {
+    list-style: none;
+    border: 1px solid #c0c;
+    float: left;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.formulariofilmes {
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 3vw;
+}
+
+.tabelaformulariofilmes {
+    margin-top: 15vh;
+    font-size: 1.5rem;
+}
+
+.tabelaformulariofilmes td {
+    padding-left: 2vw;
+}
+
+
+/* refazendo o menu */
+
+// .menu_box {
+//     background-color: #1b252f;
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     width: 100%;
+// }
+.menu_logo {
+    height: auto;
+    width: auto;
+}
+
+a {
+    color: #d8dbde;
+}
+
+.menu_item_1 {
+    margin-left: 4vw;
+    order: 1;
+}
+
+.menu_item_2 {
+    margin-left: 4vw;
+    order: 2;
+}
+
+.menu_item_3 {
+    margin-left: 4vw;
+    order: 3;
+}
+
+.menu_item_4 {
+    margin-left: 4vw;
+    order: 4;
+}
+
+.menu_item_5 {
+    margin-left: 4vw;
+    align-self: flex-start;
+}
+
+.img_usuario {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.categoria_1 {
+    background-color: #1b252f;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    vertical-align: center;
+    text-align: center;
+}
+
+.banner {
+    // align-items: center;
+    justify-content: center;
+    align-items: baseline;
+    vertical-align: center;
+}
+
+.img_banner {
+    position: 50%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.categoria_1 {
+    margin-top: 1vh;
+}
+
+.filme_1 {
+    width: 80%;
+    margin-right: 0.5vw;
+}
+
+.categoria_2 {
+    background-color: #1b252f;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    vertical-align: center;
+    text-align: center;
+}
+
+.logo {
+    height: 80%;
+}
+
+.filme_2 {
+    width: 80%;
+    margin-right: 0.5vw;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.card {
+    background-color: rgba(150, 139, 139, 0.3);
+    padding: 40px;
+    border-radius: 2px;
+    width: 280px;
+}
+
+.card-header {
+    padding-bottom: 0px;
+    padding: 0px;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.card-header::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-top: -17px;
+    margin-left: -5px;
+}
+
+.card-content label {
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    color: #fff;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer .submit {
+    width: 100%;
+    height: 40px;
+    background-color: #a13854;
+    border: none;
+    color: #e1e1e1;
+    margin: 10px 0;
+}
+
+.card-footer p {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.end a {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.lista {
+    padding: 10px 0;
+    padding-bottom: 50px;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.area_lista {
+    background-color: rgba(19, 19, 19, 0.3);
+}
+
+.menu-nav {
+    align-items: center;
+    align-content: center;
+    vertical-align: center;
+}
+
+div.aviso {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.texto-aviso {
+    size: 30rem;
+    text-align: center;
+}
+
+//     margin: 0;
+//     background: yellow;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     margin-right: -50%;
+//     transform: translate(-50%, -50%)
+// }
