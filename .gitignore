@@ -1,6 +1,8 @@
 #images
 backend/public/static/uploads/
 
+yarn.lock*
+package-lock.json*
 # Logs
 logs
 *.log
