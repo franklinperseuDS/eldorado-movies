@@ -8,7 +8,10 @@ class GeneroController {
         const generoRepository = getCustomRepository(GeneroRepository)
         const generos = await generoRepository.BuscarTodos(); 
 
-        return response.json(generos);
+        return response.json({
+            status: 'success',
+            data:generos});
+            
     }
     async view(request: Request, response: Response) {
         const generoRepository = getCustomRepository(GeneroRepository);
@@ -63,7 +66,9 @@ class GeneroController {
         genero.name = name;
        
         genero = await generoRepository.save(genero)
-        return response.json(genero);
+        return response.json({
+            status: "success",
+            data:genero});
 
     }
     async delete(request: Request, response: Response) {

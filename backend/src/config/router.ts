@@ -13,8 +13,7 @@ const upload = Multer(uploadConfig);
 
 const router = Router();
 
-console.log("olá");
-console.log(" /----|\n<    Oo\ \n |____<")
+console.log(" /----|  __________________\n<    Oo\ /  Oi Meu Chapaaa! |\n |____<  \\_________________|")
 router.post('/auth', AuthController.auth);
 
 

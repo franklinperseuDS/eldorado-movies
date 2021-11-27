@@ -9,7 +9,9 @@ class FilmeController {
         const filmesRepository = getCustomRepository(FilmeRepository)
         const filmes = await filmesRepository.BuscarTodos(); 
 
-        return response.json(filmes);
+        return response.json({
+            status: 'success',
+            data: filmes});
     }
     async view(request: Request, response: Response) {
         const filmesRepository = getCustomRepository(FilmeRepository);
@@ -102,15 +104,17 @@ class FilmeController {
         filmes.genero = genero;
         filmes.is_actived = is_actived;
         filmes = await filmesRepository.save(filmes)
-        return response.json(filmes);
+        return response.json({
+            status: "success",
+            data:filmes});
 
     }
     async delete(request: Request, response: Response) {
         const filmesRepository = getCustomRepository(FilmeRepository);
         const { id } = request.params;
-        let news = await filmesRepository.PegarPorId(id);
+        let filmes = await filmesRepository.PegarPorId(id);
 
-        await filmesRepository.delete(news);
+        await filmesRepository.delete(filmes);
         return response.json({"msg": "Filme excluido com suceso!"});
     }
 }

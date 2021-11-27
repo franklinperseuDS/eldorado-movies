@@ -3,8 +3,7 @@ import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, Entity, ManyToOne
 import { Genero } from "./Genero";
 import slugifyConfig from "../../config/slugify"
 import slugify from "slugify";
-
-
+import pathConfig from 'src/config/path'
 @Entity()
 export class Filme {
     @PrimaryGeneratedColumn()
@@ -55,7 +54,7 @@ export class Filme {
 
     @AfterLoad()
     public setFullPath() {
-        this.full_path = `http://localhost:4001/static/filme/${this.poster}`;
+        this.full_path = `${pathConfig.fullStaticPath}/${this.poster}`;
     }
 
 }

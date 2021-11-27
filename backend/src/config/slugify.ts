@@ -3,6 +3,4 @@ export default {
     remove: /[*+~.()'"!:@$]/g,
     lower: true,
     strict: true
-
 }
-
