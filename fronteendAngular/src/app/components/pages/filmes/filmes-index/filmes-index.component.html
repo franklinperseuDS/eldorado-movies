@@ -4,6 +4,14 @@
 </div>
 <div class="container">
     <a [routerLink]="['/filmes/cadastrar']" class='btn-cadastrar'><i class="fas fa-plus-circle"></i> Novo Filme</a>
+    <div class="form-container">
+        <select (change)="setPerPage($event.target.value)" class="selecionarQtd">
+            <option value="5">5</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+        </select>
+    </div>
     <table class="table">
         <thead>
             <tr>
@@ -32,7 +40,7 @@
             </tr>
         </tbody>
     </table>
-    <p style="float: left;margin-top: 20px">
+    <p style="float: left;margin-top: 20px; color:black">
         Mostrando <strong>{{ filmes.per_page }}</strong> registros de <strong>{{ filmes.from }}</strong> até
         <strong>{{ filmes.to }}</strong> na página
         <strong>{{ filmes.current_page }}</strong>. Total de <strong>{{ filmes.total }}</strong> registros.

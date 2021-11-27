@@ -1,0 +1,71 @@
+.container {
+  margin-top: 30px;
+}
+
+.container table.table {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  border-collapse: collapse;
+  color: #000;
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+.container table.table tr, .container table.table th, .container table.table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.container table.table tr > th {
+  background-color: #999090;
+  color: #fff;
+}
+
+.container table.table tr:nth-child(odd) {
+  background-color: #d3c5c5;
+}
+
+.container table.table tr:nth-child(even) {
+  background-color: #f3dddd;
+}
+
+.container table.table .btn-editar {
+  background: #2ba554;
+}
+
+.container table.table .btn-excluir {
+  background-color: #bd0f0f;
+}
+
+.container table.table .btn-visualizar {
+  background-color: #f8ba46;
+}
+
+.container table.table .btn {
+  padding: 5px 10px;
+  border-radius: 2px;
+  margin: 2px 5px;
+  color: #fff;
+}
+
+.container table.table .col-acoes {
+  width: 12%;
+}
+
+.container .btn-cadastrar, .container .btn-paginacao {
+  padding: 10px 30px;
+  background-color: #4180bb;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 2px;
+  float: right;
+}
+
+.container .btn-paginacao {
+  margin-left: 15px;
+  margin-top: 20px;
+  float: right;
+}
+/*# sourceMappingURL=filmes-view.component.css.map */
