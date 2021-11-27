@@ -1,0 +1,36 @@
+<div class="title">
+    <h2>Listagem de generos</h2>
+    <hr>
+</div>
+<div class="container">
+    <a [routerLink]="['/filmes/cadastrar']" class='btn-cadastrar'><i class="fas fa-plus-circle"></i> Novo Genero</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+
+                <th class="col-acoes">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let genero of generos">
+                <td>{{genero.id}}</td>
+                <td>{{genero.name}}</td>
+
+                <td>
+                    <a href="# " class="btn btn-editar ">
+                        <i class="fas fa-pencil "></i>
+                    </a>
+                    <a href="# " class="btn btn-visualizar ">
+                        <i class="fas fa-eye "></i>
+                    </a>
+                    <a href="# " class="btn btn-excluir ">
+                        <i class="fas fa-trash "></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
