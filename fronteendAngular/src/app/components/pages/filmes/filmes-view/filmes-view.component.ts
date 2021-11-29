@@ -2,6 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterStateSnapshot , Router } from '@angular/router';
+import { FilmesService } from 'src/app/services/filmes.service';
 
 
 @Component({
@@ -10,40 +11,17 @@ import { ActivatedRoute, RouterStateSnapshot , Router } from '@angular/router';
   styleUrls: ['./filmes-view.component.sass']
 })
 export class FilmesViewComponent implements OnInit {
+  public filmes;
+  
+  constructor(private router: ActivatedRoute, private filmesService:FilmesService) {}
 
-  // public params
-  // public param1
-  // public param2
-  // public id
-  constructor(private router: ActivatedRoute) {}
-//     this.params = 
 
   ngOnInit(): void {
-   
+    const id = this.router.snapshot.params.id;
+    this.filmes = this.filmesService.getById(id).subscribe( filme => {
+      this.filmes = filme 
+    });
     
-       
-   
   }
-//   getGeneros() {
-//     return this.generosService.getAll().subscribe(generos => {
-//       this.generos = generos;
-//       console.log(this.generos)
-//     })
-//   }
-//   getParam() {
-//     const id = this.routerParam.snapshot.queryParams['id'];
-//   }
-//   index() {
-//     this.filmesService.getById(2).subscribe(filmes => {
-//       this.filmes = filmes.data;
-//       console.log(filmes)
-    
-//     })
-
- 
-
- 
- 
-//   }
 
 }
