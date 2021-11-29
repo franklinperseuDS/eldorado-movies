@@ -7,6 +7,9 @@ import Multer  from 'multer';
 import UserController from "./../app/Controllers/UserController";
 import AuthController from "./../app/Controllers/AuthController";
 import Auth from "./../app/Middlewares/AuthMiddleware";
+import filmeValidator from "src/app/Validator/filmeValidator";
+import userValidator from "src/app/Validator/userValidator";
+import generoValidator from "src/app/Validator/generoValidator";
 
 
 const upload = Multer(uploadConfig);
@@ -18,23 +21,23 @@ router.post('/auth', AuthController.auth);
 
 
 router.get('/usuarios', UserController.index);
-router.post('/usuarios', UserController.create);
+router.post('/usuarios',userValidator, UserController.create);
 router.get('/usuarios/:id', UserController.view);
-router.put('/usuarios/:id', UserController.update);
+router.put('/usuarios/:id',userValidator, UserController.update);
 router.delete('/usuarios/:id', UserController.delete);
 
 // router.use(Auth)
 router.get('/filmes', FilmeController.index);
-router.post('/filmes',upload.single('poster'), FilmeController.create);
+router.post('/filmes', upload.single('poster'), filmeValidator,FilmeController.create);
 // router.post('/filmes', FilmeController.create);
 router.get('/filmes/:id', FilmeController.view);
-router.put('/filmes/:id', FilmeController.update);
+router.put('/filmes/:id', filmeValidator,FilmeController.update);
 router.delete('/filmes/:id', FilmeController.delete);
 
 router.get('/generos', GeneroController.index);
-router.post('/generos', GeneroController.create);
+router.post('/generos',generoValidator, GeneroController.create);
 router.get('/generos/:id', GeneroController.view);
-router.put('/generos/:id', GeneroController.update);
+router.put('/generos/:id',generoValidator, GeneroController.update);
 router.delete('/generos/:id', GeneroController.delete);
 
 

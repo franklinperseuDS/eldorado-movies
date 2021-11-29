@@ -112,9 +112,10 @@ class FilmeController {
     async delete(request: Request, response: Response) {
         const filmesRepository = getCustomRepository(FilmeRepository);
         const { id } = request.params;
+       
         let filmes = await filmesRepository.PegarPorId(id);
-
-        await filmesRepository.delete(filmes);
+        console.log(filmes.id);
+        await filmesRepository.delete(filmes.id);
         return response.json({"msg": "Filme excluido com suceso!"});
     }
 }

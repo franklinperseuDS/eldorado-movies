@@ -11,7 +11,7 @@ export default async (request:Request, response:Response, next:NextFunction) =>
             sinopse:Yup.string().required().trim(),
             ano_lancamento:Yup.string().required().trim(),
             faturamento:Yup.string().required().trim(),
-            poster:Yup.string().required().trim(),
+            poster:Yup.string().trim(),
         })
 
         await schema.validate(request.body, {abortEarly: false})
