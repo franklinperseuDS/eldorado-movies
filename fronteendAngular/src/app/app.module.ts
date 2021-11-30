@@ -12,7 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FilmesCreateComponent } from './components/pages/filmes/filmes-create/filmes-create.component';
 import { GenerosCreateComponent } from './components/pages/generos/generos-create/generos-create.component';
 import { GenerosIndexComponent } from './components/pages/generos/generos-index/generos-index.component';
-import { FilmesViewComponent } from './components/pages/filmes/filmes-view/filmes-view.component'
+import { FilmesViewComponent } from './components/pages/filmes/filmes-view/filmes-view.component';
+import { FilmesDeleteComponent } from './components/pages/filmes/filmes-delete/filmes-delete.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { FilmesViewComponent } from './components/pages/filmes/filmes-view/filme
     FilmesCreateComponent,
     GenerosCreateComponent,
     GenerosIndexComponent,
-    FilmesViewComponent
+    FilmesViewComponent,
+    FilmesDeleteComponent
   ],
   imports: [
     BrowserModule,

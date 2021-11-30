@@ -33,7 +33,7 @@
                     <a [routerLink]="['/filmes/visualizar/', filme.id]" class="btn btn-visualizar ">
                         <i class="fas fa-eye "></i>
                     </a>
-                    <a href="# " class="btn btn-excluir ">
+                    <a routerLink="/filmes/delete/{{filme.id}}" class="btn btn-excluir ">
                         <i class="fas fa-trash "></i>
                     </a>
                 </td>

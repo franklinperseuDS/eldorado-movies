@@ -46,4 +46,14 @@ export class FilmesService {
     throw new Error(str_errors)
     return EMPTY;
   }
+
+  deleteById(id?): string | any {
+    return this.http.delete(`${environment.baseApiUrl}/filmes/${id}`)
+                          .pipe(
+                            map(obj =>obj),
+                            catchError(e => this.errorHandler(e))
+                            )
+
+  }
+
 }

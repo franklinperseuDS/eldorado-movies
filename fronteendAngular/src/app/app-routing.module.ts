@@ -5,6 +5,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FilmesViewComponent } from './components/pages/filmes/filmes-view/filmes-view.component';
+import { FilmesDeleteComponent } from './components/pages/filmes/filmes-delete/filmes-delete.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,11 @@ const routes: Routes = [
   },{
     path: "generos",
     component: GenerosIndexComponent
+  },{
+    path: 'filmes/delete/:id',
+    component: FilmesDeleteComponent
   }
+
  
 
 ];
