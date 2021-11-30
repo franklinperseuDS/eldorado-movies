@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterStateSnapshot , Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { FilmesService } from 'src/app/services/filmes.service';
 
 
